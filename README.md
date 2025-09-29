@@ -12,8 +12,6 @@ Type a **movie title, keyword, or genre**, and get instant **personalized movie 
 
 </div>  
 
----
-
 ## 🚀 Features  
 
 - 🎨 **Interactive Web App** – Built with Streamlit  
@@ -23,7 +21,7 @@ Type a **movie title, keyword, or genre**, and get instant **personalized movie 
 - 🔍 **Search by Title, Keyword, or Genre**  
 - 🌐 **Deployable** – Streamlit Cloud / HuggingFace Spaces  
 
----
+
 ## ⚙️ Installation & Setup
 
 1️⃣ Clone Repository
