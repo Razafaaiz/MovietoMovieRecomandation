@@ -92,9 +92,8 @@ Get live app at: https://movietomovierecomandation.streamlit.app/
 
 ✔️ Excellent addition to Data Science / ML portfolio
 
-<div align="center">
-✨ Movie to Movie Recommendations | 🚀 Built with Streamlit + SBERT + FAISS | 2025 ✨
-</div> 
+
+
 ## 🏗️ Project Structure  
 
 ```plaintext
@@ -114,7 +113,9 @@ HybridRecommendationSystem/
 ├── requirements.txt      # Dependencies
 ├── .gitignore            # Ignore unnecessary files
 └── README.md             # Documentation
-
+<div align="center">
+✨ Movie to Movie Recommendations | 🚀 Built with Streamlit + SBERT + FAISS | 2025 ✨
+</div> ```
 
 
 
