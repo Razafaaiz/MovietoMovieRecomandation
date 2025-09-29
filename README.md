@@ -27,11 +27,13 @@ Type a **movie title, keyword, or genre**, and get instant **personalized movie 
 1️⃣ Clone Repository
 
 git clone https://github.com/YourUsername/HybridRecommendationSystem.git
+
 cd HybridRecommendationSystem
 
 2️⃣ Create Virtual Environment
 
 python -m venv venv
+
 venv\Scripts\activate      # Windows  
 
 3️⃣ Install Dependencies
