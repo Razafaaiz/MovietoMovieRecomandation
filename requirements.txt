@@ -1,7 +1,6 @@
 pandas
 numpy
 scikit-learn
-tensorflow==2.20.0
 streamlit
 sentence-transformers
 faiss-cpu
