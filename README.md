@@ -78,7 +78,7 @@ streamlit run app/app.py
 
 🎬 Display Top-N Recommendations in Streamlit
 
-##🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 🐍 Python 3.11
 
@@ -90,7 +90,7 @@ streamlit run app/app.py
 
 📊 Pandas & NumPy – Data Processing
 
-##🌐 Deployment
+## 🌐 Deployment
 
 Deploy easily on Streamlit Cloud:
 
@@ -102,7 +102,7 @@ Connect GitHub → Select repo → Deploy 🚀
 
 Get live app at: https://movietomovierecomandation.streamlit.app/
 
-##🎯 Why This Project?
+## 🎯 Why This Project?
 
 ✔️ Real-world Recommendation System project
 
