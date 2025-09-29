@@ -26,7 +26,7 @@ Type a **movie title, keyword, or genre**, and get instant **personalized movie 
 ---
 
 ## 🏗️ Project Structure  
-```plaintext
+
 HybridRecommendationSystem/
 │
 ├── app/                  # Streamlit app
@@ -43,7 +43,9 @@ HybridRecommendationSystem/
 ├── requirements.txt      # Dependencies
 ├── .gitignore            # Ignore unnecessary files
 └── README.md             # Documentation
+
 ## ⚙️ Installation & Setup
+
 1️⃣ Clone Repository
 
 git clone https://github.com/YourUsername/HybridRecommendationSystem.git
