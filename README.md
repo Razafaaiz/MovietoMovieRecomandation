@@ -27,20 +27,17 @@ Type a **movie title, keyword, or genre**, and get instant **personalized movie 
 
 ## 🏗️ Project Structure  
 
-```plaintext
-HybridRecommendationSystem/
-│
-├── app/                  # Streamlit app
-│   └── app.py            # Main entry point
-│
-├── src/                  
-│   ├── content_based.py  # Embedding + Recommendation logic
-│   └── utils.py          # Helper functions
-│
-├── data/                 
-│   └── movies.csv        # Movie dataset (title + genres only)
-│
-├── train.py              # Script for building embeddings
-├── requirements.txt      # Dependencies
-├── .gitignore            # Ignore unnecessary files
-└── README.md             # Documentation
+<h1>⚙️ Installation & Setup</h1>
+1️⃣ Clone Repository
+
+git clone https://github.com/YourUsername/HybridRecommendationSystem.git
+cd HybridRecommendationSystem
+
+
+
+
+
+
+
+
+
