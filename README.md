@@ -30,18 +30,28 @@ Type a **movie title, keyword, or genre**, and get instant **personalized movie 
 HybridRecommendationSystem/
 │
 ├── app/                  # Streamlit app
+
 │   └── app.py            # Main entry point
+
 │
-├── src/                  
+├── src/         
+
 │   ├── content_based.py  # Embedding + Recommendation logic
+
 │   └── utils.py          # Helper functions
+
 │
-├── data/                 
+├── data/      
+
 │   └── movies.csv        # Movie dataset (title + genres only)
+
 │
 ├── train.py              # Script for building embeddings
+
 ├── requirements.txt      # Dependencies
+
 ├── .gitignore            # Ignore unnecessary files
+
 └── README.md             # Documentation
 
 ## ⚙️ Installation & Setup
@@ -114,7 +124,7 @@ Get live app at: https://movietomovierecomandation.streamlit.app/
 
 <div align="center">
 ✨ Movie to Movie Recommendations | 🚀 Built with Streamlit + SBERT + FAISS | 2025 ✨
-</div> ```
+</div> 
 
 
 
