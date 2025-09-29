@@ -1,58 +1,33 @@
+import sys
 import os
-import pickle
-import pandas as pd
-from src.content_based import build_embeddings
-from src.utils import save_embeddings, save_faiss_index
 
-# -----------------------------
-# Helper function to load datasets
-# -----------------------------
-def load_datasets(data_dir="data"):
-    """
-    Load movies, ratings, tags, and links datasets from given folder.
-    
-    Returns:
-        movies, ratings, tags, links (pd.DataFrame)
-    """
-    movies = pd.read_csv(os.path.join(data_dir, "movies.csv"))
-    ratings = pd.read_csv(os.path.join(data_dir, "ratings.csv"))
-    tags = pd.read_csv(os.path.join(data_dir, "tags.csv"))
-    links = pd.read_csv(os.path.join(data_dir, "links.csv"))
-    return movies, ratings, tags, links
+# Add src folder to Python path
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+SRC_PATH = os.path.join(PROJECT_ROOT, "src")
+if SRC_PATH not in sys.path:
+    sys.path.append(SRC_PATH)
 
-# -----------------------------
-# Load datasets
-# -----------------------------
-movies, ratings, tags, links = load_datasets("data")
+# Now you can import from src
+from content_based import build_embeddings
+from utils import save_embeddings, save_faiss_index, load_movies
 
-# -----------------------------
-# Merge average ratings into movies
-# -----------------------------
-avg_ratings = ratings.groupby('movieId')['rating'].mean().reset_index()
-movies = movies.merge(avg_ratings, on='movieId', how='left')
 
-# -----------------------------
-# Build embeddings + FAISS index (CPU only)
-# -----------------------------
+# --- Load Movies Dataset ---
+movies = load_movies("data/movies.csv")
+print(f"✅ Loaded {len(movies)} movies.")
+
+# --- Build Embeddings + FAISS Index ---
+print("⏳ Building embeddings and FAISS index ... this may take a few seconds")
 embeddings, faiss_index, embedder = build_embeddings(movies)
+print("✅ Embeddings and FAISS index built successfully!")
 
-# -----------------------------
-# Create models folder
-# -----------------------------
+# --- Create models folder if not exists ---
 os.makedirs("models", exist_ok=True)
 
-# -----------------------------
-# Save embeddings and FAISS index
-# -----------------------------
+# --- Save embeddings and FAISS index ---
 save_embeddings(embeddings, "models/movie_embeddings.npy")
 save_faiss_index(faiss_index, "models/faiss.index")
+print("✅ Embeddings and FAISS index saved to models/")
 
-# -----------------------------
-# Save processed movies DataFrame
-# -----------------------------
-with open("models/movies.pkl", "wb") as f:
-    pickle.dump(movies, f)
-
-print("✅ Embeddings, FAISS index, and movies.pkl saved to models/")
 
 
