@@ -27,7 +27,7 @@ Type a **movie title, keyword, or genre**, and get instant **personalized movie 
 
 ## 🏗️ Project Structure  
 
-<h1>⚙️ Installation & Setup</h1>
+## ⚙️ Installation & Setup
 1️⃣ Clone Repository
 
 git clone https://github.com/YourUsername/HybridRecommendationSystem.git
