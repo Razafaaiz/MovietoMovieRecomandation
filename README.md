@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎬 Hybrid Movie Recommendation System 🍿  
+# 🎬 Movie to Movie Recommendation System 🍿  
 
 [![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red?logo=streamlit)](https://streamlit.io)  
 [![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)](https://www.python.org/)  
@@ -99,7 +99,7 @@ Get live app at: https://movietomovierecomandation.streamlit.app/
 ## 🏗️ Project Structure  
 
 ```plaintext
-HybridRecommendationSystem/
+Movie to Movie Recommendation System/
 │
 ├── app/                  # Streamlit app
 │   └── app.py            # Main entry point
@@ -115,11 +115,3 @@ HybridRecommendationSystem/
 ├── requirements.txt      # Dependencies
 ├── .gitignore            # Ignore unnecessary files
 └── README.md             # Documentation
-
-
-
-
-
-
-
-
