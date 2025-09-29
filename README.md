@@ -24,37 +24,6 @@ Type a **movie title, keyword, or genre**, and get instant **personalized movie 
 - 🌐 **Deployable** – Streamlit Cloud / HuggingFace Spaces  
 
 ---
-
-## 🏗️ Project Structure  
-
-HybridRecommendationSystem/
-
-│
-├── app/                  # Streamlit app
-
-│   └── app.py            # Main entry point
-
-│
-├── src/         
-
-│   ├── content_based.py  # Embedding + Recommendation logic
-
-│   └── utils.py          # Helper functions
-
-│
-├── data/      
-
-│   └── movies.csv        # Movie dataset (title + genres only)
-
-│
-├── train.py              # Script for building embeddings
-
-├── requirements.txt      # Dependencies
-
-├── .gitignore            # Ignore unnecessary files
-
-└── README.md             # Documentation
-
 ## ⚙️ Installation & Setup
 
 1️⃣ Clone Repository
@@ -126,6 +95,25 @@ Get live app at: https://movietomovierecomandation.streamlit.app/
 <div align="center">
 ✨ Movie to Movie Recommendations | 🚀 Built with Streamlit + SBERT + FAISS | 2025 ✨
 </div> 
+## 🏗️ Project Structure  
+
+```plaintext
+HybridRecommendationSystem/
+│
+├── app/                  # Streamlit app
+│   └── app.py            # Main entry point
+│
+├── src/                  
+│   ├── content_based.py  # Embedding + Recommendation logic
+│   └── utils.py          # Helper functions
+│
+├── data/                 
+│   └── movies.csv        # Movie dataset (title + genres only)
+│
+├── train.py              # Script for building embeddings
+├── requirements.txt      # Dependencies
+├── .gitignore            # Ignore unnecessary files
+└── README.md             # Documentation
 
 
 
