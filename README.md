@@ -64,9 +64,9 @@ pip install -r requirements.txt
 
 streamlit run app/app.py
 
-🧠 How It Works
+## 🧠 How It Works
 
-##📌 Workflow
+📌 Workflow
 
 📝 Load movies.csv (title + genres)
 
