@@ -28,6 +28,7 @@ Type a **movie title, keyword, or genre**, and get instant **personalized movie 
 ## 🏗️ Project Structure  
 
 HybridRecommendationSystem/
+
 │
 ├── app/                  # Streamlit app
 
