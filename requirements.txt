@@ -6,3 +6,5 @@ sentence-transformers
 faiss-cpu
 tqdm
 requests
+altair==4.2.2
+
